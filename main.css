@@ -1,0 +1,142 @@
+p{
+  color:teal;
+  font-size:17px;
+}
+
+.listitem{
+  color:#cc0000;
+  font-size:20px;
+}
+
+.question{
+  color:#cc0000;
+  font-size: 18px;
+}
+
+#background{
+   background-color:silver;
+}
+
+#button{
+  width:65px;
+  height:20px;
+  color:white;
+  background-color:black;
+  border-radius:40px;
+  margin-bottom:35px;
+}
+
+#banner{
+  height:30px;
+  width:99%;
+  border:5px outset #669999;
+  background-color:#99ffcc;
+  border-radius:15px;
+}
+
+#footer{
+  height:30px;
+  width:99%;
+  border:5px outset #669999;
+  background-color:#99ffcc;
+  border-radius:15px;
+}
+
+.wrap-list{
+  width: 48%;
+  border-radius: 10px;
+  border: 5px outset #669999;
+  margin-bottom:2em;
+}
+
+.wrap-trivia{
+  height: 230px;
+  width: 350px;
+  border: 5px outset #669999;
+  border-radius:15px;
+  margin-top:1.5em 0;
+  padding: 20px;
+}
+
+.wrap-text{
+  color:#006666;
+}
+
+#one{
+  height:150px;
+  width:150px;
+  background-color: teal;
+  color:#cc0000;
+  display:inline-block;
+  position:relative;
+  top:200px;
+  z-index:2;
+  left:275px;
+}
+
+#two{
+  height:150px;
+  width:150px;
+  background-color: silver;
+  color:teal;
+  display:inline-block;
+  position:absolute;
+  z-index:1;
+}
+
+#three{
+  height:150px;
+  width:150px;
+  background-color: #cc0000;
+  color:teal;
+  display:inline-block;
+  position:fixed;
+  left:25%;
+}
+
+#background-h{
+  height:2048px;
+}
+
+.navitem{
+  list-style-type: none;
+  display: inline;
+  margin-right:.3em;
+  padding:2px 5px;
+  
+}
+
+#navmenu{
+  text-align: center;
+  background-color:teal;
+  color:white;
+}
+
+a:link{
+  color:teal;
+}
+
+a:visited{
+  color:#cc0000;
+}
+
+a:hover{
+  color:black;
+}
+
+a:active{
+  color:silver;
+}
+
+.rightside{
+  float:right;
+  width:48%;
+}
+
+.leftside{
+  width:48%;
+}
+
+.clearfloat{
+  clear:both;
+}
