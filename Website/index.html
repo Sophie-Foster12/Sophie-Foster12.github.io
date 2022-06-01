@@ -1,0 +1,95 @@
+<html>
+  <head>
+    <link type="text/css" rel="stylesheet" href="main.css" />
+    <title> Keeper of the Lost Cities</title>
+    <script>
+      function banner(){
+        var text = confirm("Proceed to https://shannonmessenger.com?");
+        return text;
+      }
+      
+      function answer(){
+        var radio = document.getElementsByName("trivia");
+        var selection = false;
+        var message = "";
+        for( var i = 0; i < radio.length; i++) {
+         if(radio[i].value == "yes" && radio[i].checked == true) {
+            selection = true;
+          } //end if statement
+        } //end for loop
+        if(selection == true) {
+          message = message + "<b><p style='color:green'>Way to go!</p></b>";
+     } else {
+       message = message + "<b><p style='color:red'>Try again.</p></b>";
+     }
+       document.getElementById("response").innerHTML = message;
+      }
+    </script>
+    <style>
+
+    
+    </style>
+  </head>
+  <body id="background">
+    <a onclick="return banner()" href="https://shannonmessenger.com">
+    <header id="banner"></header>
+    
+    </a>
+    
+    <nav>
+      <ul id="navmenu">
+        <li class="navitem"> <a href="index.html">Home</a> </li>
+        <li class="navitem"> <a href="about.html">About</a> </li>
+        <li class="navitem"> <a href="books.html">Books</a> </li>
+        <li class="navitem"> <a href="writing.html">Writing<a/> </li>
+      <ul>
+    </nav>
+    
+    <div class="rightside">
+      
+      <div class="wrap-trivia">
+       <h2>Lost Cities Trivia Question:</h2>
+       <p class="question"> How many Councillors lead the Lost Cities?</p>
+       <form>
+         <div id="response"></div>
+        <input type="radio" name="trivia" value="no"> Three <br/>
+        <input type="radio" name="trivia" value="no"> One <br/>
+        <input type="radio" name="trivia" value="yes"> Twelve <br/>
+        <input type="radio" name="trivia" value="no"> Five <br/>
+        <input onclick="answer()" id="button" type="button" value="Submit">
+       </form>
+      </div>
+      
+      </div> <!-- closing righside div tag -->
+      
+      <div class="leftside">
+    
+    <h1> Keeper of the Lost Cities</h1>
+    <p><strong><span class="wrap-text">Book Series by Shannon Messenger</span></strong></p>
+    <p>
+      The powers buried deep inside her could save—or destroy—them all. Sophie Foster finally discovers where her secret telepathic ability comes from when she learns she’s actually not human, but is from another world that exists side-by-side with ours.
+    </p>
+    
+    <div class="wrap-list">
+      <ul>
+        <li class="listitem">About <em>Keeper of the Lost Cities</em></li>
+        <li class="listitem">About the Characters</li>
+        <li class="listitem">About the Author</li>
+        </ul>
+      </div>
+      
+      </div> <!-- closing leftside div tag -->
+      <div class="clearfloat"></div>
+
+    
+    <img width="49%" src="https://chat.google.com/u/0/api/get_attachment_url?url_type=FIFE_URL&content_type=image%2Fpng&attachment_token=AAUuIGtvoXvyYKCuEsUquBHYE7F82lkRylRkhg6VLWFMC7L%2By98sLLZ1yQEnvqlXZQ70sMHM61I%2F9Fod0BipQCBWGurGcmahn6imssUvjRf6QA%2BCVfFM909Omnz61y5rXOD4TQ%2FCL6NSJLWK4odkQvDAehqsRE1nGmZHncjM3uzf%2F0JOp%2B1eQmYQo9t9Z8p4%2BFegsX8GCN4oQhAgx9Z8acvYEpc2IOF5Zf7%2BCGiDCdRnjhRKRT1Ss5epvwQcD%2B3VPnVA730OOJPBoQ51OiooLzD7MXv%2FlpeaYQx8%2FKAU%2F%2FtJHBPBo35pPusBXgi3Bbj%2FOgM2bF96Y%2FRivU9v0o2MS%2FtS3Mw6DEmrhvsc5n%2FFrGaG%2BgCErd9kS3p8E2WfMyI90cE4j%2BWKqmrG3aar696lXlrDt5VwFSbHsVdKQrXyZKJn5t68RRv9DXLjE%2Fdeqj%2BDKG6r%2BWboEWjR81dv%2Bh9lUmnCfY304XctH7aF%2FhOPk8ZpjbUS02Tm6y7Fmg%3D%3D&sz=w512" />
+    <img width="49%" src="https://chat.google.com/u/0/api/get_attachment_url?url_type=FIFE_URL&content_type=image%2Fpng&attachment_token=AAUuIGtk4hVLHsL%2BYaP7qmAXDegqcdolfeiEBKTFDxqBkT%2FPk09%2BhN8aWmq1ka7QssY5jw%2BmU7SZTLtIF5zjDiNzIp1QrHGoGRM5aPvmkNq5A2ZBCcQa4kUDKV4RzfjQUkOHQzDta0Y6nHXYImVEMJ8YVou%2F%2FnTqF4%2FMjQJMyVHHixom3bi3o0s2PE8sZNBO%2BlVfbswjealEiELfMHPYpvCQgI5qYoY0R49cniMDrjdQwDEhh6iYaOujOrFYRzrgoqsLxanxg9PlHzy62E2e4yMDEqAv0OmCMMdBYwR9GL%2F2wO1%2BJrU6FVztS%2FtCTs%2B%2FYfjp4prrgPIsMQ12skx%2FXxGAc%2BBjXww4KN030HC%2FVISeQ65f8oxltjTz2HMIdTD2iVsDoenHgwyclLiJfq8QerCI4rLji9ogv1Wf91eSy2bfGF3gG8gvzOMeIdC9GKjahrDbrFuis1yivuBb%2BERUXFkyQABAZ7liNi6IBt82hS0kqao0LQYcpfKt%2FA%3D%3D&sz=w512" />
+    
+    <hr/>
+    
+    <center> Sophie <a href="https://keeperofthelostcities.com">My Favorite Website</a></center>
+    
+    <footer id="footer"></footer>
+    
+  </body>
+</html>
